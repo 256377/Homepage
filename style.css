@@ -15,7 +15,8 @@ h1{
     margin-top:100px;
     margin-bottom:25px;
     font-size:150px;
-    font-family: 'Alfa Slab One', sans-serif;
+    font-family: "Pacifico";
+    color: #597081;
 
 }
 a{
@@ -50,8 +51,8 @@ input{
 }
 .submit-button{
     width:15%;
-    background:#000;
-    color:#FFF;
+    background:#7EA0B7;
+    color:#fff;
 }
 /*
 =================================================
@@ -61,18 +62,19 @@ BOOKMARKS
 .bookmarks{
     padding:30px;
     clear:both;
+    color: #597081;
 }
 .bookmarks i{
     font-size:24px;
     margin:0 30px;
-    color:#000;
+    color:#597081;
     line-height:32px;
     transition:.2s;
     text-decoration:none;
     cursor: pointer;
 }
 .bookmarks i:hover{
-    color:#000;
+    color:#597081;
     font-size:28px;
     line-height:26px;
 
@@ -102,7 +104,7 @@ POST-IT NOTE
     width:250px;
     height:250px;
     resize: none;
-    background:#F3F19D;
+    background:#597081;
     padding:15px;
     border:none;
     position: absolute;
@@ -113,41 +115,6 @@ POST-IT NOTE
     transition:.2s;
     opacity:0;
 }
-
-
-/*
-=================================================
-TWITTER
-=================================================
-*/
-.twitter-wrapper{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:#FFF;
-}
-#tweet{
-    z-index:-1;
-    opacity:0;
-    transition:.2s;
-}
-.twitter-timeline{
-    margin:0 auto;
-    max-width:600px !important;
-    max-height: 100%;
-    overflow-y: scroll;
-    color:#CCC;
-}
-.exit{
-    position:absolute;
-    top:10px;
-    right:10px;
-    cursor:pointer;
-    color:#999;
-}
-
 
 
 /*
@@ -164,7 +131,7 @@ JACKIE
     height:200px;
     resize: none;
     margin:10px;
-    background:#F3F19D;
+    background:#597081;
     padding:15px;
     border:none;
     font-family:sans-serif;
@@ -187,12 +154,14 @@ JACKIE
     .bookmarks i{
     margin:0 15px;
     }
-    .twitter-wrapper{
-        padding-top:40px;
-    }
+    
 }
 
 body{
     text-align:center;
     margin-top:150px;
+  }
+
+  body{
+    background-color:#CECECE;
   }
