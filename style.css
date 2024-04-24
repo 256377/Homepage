@@ -1,167 +1,164 @@
-*{
+* {
     box-sizing: border-box;
 }
-html, body{
-    height:100%;
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    font-family: sans-serif;
 }
-body{
-    margin:0;
-    background:#gray;
+
+body {
+    background: #CECECE; /* Changed from #gray to #CECECE */
     text-align: center;
-    font-family:sans-serif;
-    padding:0 30px
+    padding: 0 30px;
 }
-h1{
-    margin-top:100px;
-    margin-bottom:25px;
-    font-size:150px;
+
+
+h1 {
+    margin-top: 180px;
+    margin-bottom: 25px;
+    font-size: 150px;
     font-family: "Pacifico";
     color: #597081;
-
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 #clock {
-    position:absolute;
-    bottom:10px;
-    right:10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
-/*
-=================================================
-SEARCH
-=================================================
-*/
-form{
-    width:100%;
-    max-width:600px;
-    margin:0 auto;
+
+/* SEARCH */
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
-input{
-    width:100%;
-    font-size:32px;
-    margin:5px 0;
-    float:left;
-    border:none;
-    padding:10px;
-    outline:none;
+
+input {
+    width: 100%;
+    font-size: 32px;
+    margin: 5px 0;
+    float: left;
+    border: none;
+    padding: 10px;
+    outline: none;
 }
-.search-bar{
-    width:85%;
+
+.search-bar {
+    width: 85%;
 }
-.submit-button{
-    width:15%;
-    background:#7EA0B7;
-    color:#fff;
+
+.submit-button {
+    width: 15%;
+    background: #7EA0B7;
+    color: #fff;
 }
-/*
-=================================================
-BOOKMARKS
-=================================================
-*/
-.bookmarks{
-    padding:30px;
-    clear:both;
+
+/* BOOKMARKS */
+.bookmarks {
+    padding: 30px;
+    clear: both;
     color: #597081;
 }
-.bookmarks i{
-    font-size:24px;
-    margin:0 30px;
-    color:#597081;
-    line-height:32px;
-    transition:.2s;
-    text-decoration:none;
+
+.bookmarks i {
+    font-size: 24px;
+    margin: 0 30px;
+    color: #597081;
+    line-height: 32px;
+    transition: .2s;
+    text-decoration: none;
     cursor: pointer;
 }
-.bookmarks i:hover{
-    color:#597081;
-    font-size:28px;
-    line-height:26px;
 
-}
- 
-/*
-=================================================
-CALCULATOR
-=================================================
-*/
-.calculator{
-    position:absolute;
-    bottom:50px;
-    right:50px;
-}
-#calc{
-    transition:.2s;
-    opacity:0;
+.bookmarks i:hover {
+    color: #597081;
+    font-size: 28px;
+    line-height: 26px;
 }
 
-/*
-=================================================
-POST-IT NOTE
-=================================================
-*/
-#note{
-    width:250px;
-    height:250px;
-    resize: none;
-    background:#597081;
-    padding:15px;
-    border:none;
+/* CALCULATOR */
+.calculator {
     position: absolute;
-    bottom:50px;
-    left:50px;
-    font-family:sans-serif;
-    outline:none;
-    transition:.2s;
-    opacity:0;
+    bottom: 50px;
+    right: 50px;
 }
 
-
-/*
-=================================================
-JACKIE
-=================================================
-*/
-#notes{
-    opacity:0;
-    transition:.2s;
+#calc {
+    transition: .2s;
+    opacity: 0;
 }
-.post-it{
-    width:200px;
-    height:200px;
+
+/* POST-IT NOTE */
+#note {
+    width: 250px;
+    height: 250px;
     resize: none;
-    margin:10px;
-    background:#597081;
-    padding:15px;
-    border:none;
-    font-family:sans-serif;
-    outline:none;
+    background: #597081;
+    padding: 15px;
+    border: none;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    font-family: sans-serif;
+    outline: none;
+    transition: .2s;
+    opacity: 0;
 }
 
+#notes {
+    opacity: 0;
+    transition: .2s;
+}
+
+.post-it {
+    width: 200px;
+    height: 200px;
+    resize: none;
+    margin: 10px;
+    background: #597081;
+    padding: 15px;
+    border: none;
+    font-family: sans-serif;
+    outline: none;
+}
+
+/* Responsive Design */
 @media only screen and (max-width: 900px) {
-    h1{
-        margin-top:50px;
-        font-size:100px;
+    h1 {
+        margin-top: 50px;
+        font-size: 100px;
     }
 }
-
 
 @media only screen and (max-width: 600px) {
-    h1{
-        margin-top:50px;
-        font-size:75px;
+    h1 {
+        margin-top: 50px;
+        font-size: 75px;
     }
-    .bookmarks i{
-    margin:0 15px;
+    .bookmarks i {
+        margin: 0 15px;
     }
-    
 }
 
-body{
-    text-align:center;
-    margin-top:150px;
-  }
+.weatherwidget-io {
+    position: fixed;
+    top: 0;
+    left: 10px; /* Adjust the distance from the left as needed */
+    background-color: #007bff; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    z-index: 999; /* Ensure the widget stays on top of other content */
+}
 
-  body{
-    background-color:#CECECE;
-  }
+
+
