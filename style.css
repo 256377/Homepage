@@ -162,3 +162,15 @@ input {
 
 
 
+/* Define the keyframes for the fadeIn animation */
+@keyframes fadeIn {
+    0% { opacity: 0; } /* Start with 0 opacity */
+    50% { opacity: 1; } /* Fade in to full opacity halfway through */
+    100% { opacity: 0; } /* Fade out to 0 opacity at the end */
+}
+
+/* Apply the keyframes animation to the h1 element */
+h1 {
+    animation: fadeIn 4s infinite; /* Apply the fadeIn animation, repeat infinitely */
+}
+
